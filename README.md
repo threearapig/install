@@ -405,48 +405,7 @@ chezmoi init --apply https://github.com/threearapig/dotfiles
 git clone https://github.com/.wallpapers
 ```
 
-### 桌面环境
-
 [桌面等常用软件](https://github.com/threearapig/dotfiles)
-
-### 声音管理
-
-```bash
-sudo pacman -S alsa-utils alsa-firmware sof-firmware alsa-ucm-conf pulseaudio pulseaudio-alsa
-```
-
-> amixer 和 alsamixer 工具都包含在alsa-utils包里  
-> amixer 和 alsamixer：管理声音，一个命令，一个命令行图形界面管理  
-> alsa-firmware、sof-firmware 和 alsa-ucm-conf：某些声卡可能需要的固件  
-
-### 蓝牙
-
-```bash
-paru -S bluez bluez-utils pulseaudio-bluetooth
-```
-
-> bluez：提供蓝牙协议栈  
-> bluez-utils：提供 bluetoothctl 实用程序  
-> pulseaudio_bluebooth：用于蓝牙的声音  
-
-```bash
-sudo systemctl enable bluetooth.service
-```
-
-### 屏幕背光管理
-
-```bash
-paru -S light
-```
-
-> light：管理屏幕亮度  
-
-
-### 显卡驱动
-
-```bash
-sudo pacman -S mesa lib32-mesa xf86-video-amdgpu vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau
-```
 
 
 ## 常见问题
