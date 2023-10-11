@@ -387,6 +387,30 @@ systemctl enable v2raya.service
 paru -S firefox wqy-microhei
 ```
 
+
+### 设置 DNS
+
+```bash
+vim /etc/resolv.conf
+```
+
+加入以下内容：  
+
+```text
+nameserver 8.8.8.8
+nameserver 2001:4860:4860::8888
+nameserver 8.8.4.4
+nameserver 2001:4860:4860::8844
+```
+
+为此文件加上权限，防止有的路由器更改它  
+
+```bash
+sudo chattr +i /etc/resolv.conf
+```
+
+
+
 ### 最后重启，并使用普通用户登陆
 
 
@@ -405,7 +429,7 @@ chezmoi init --apply https://github.com/threearapig/dotfiles
 git clone https://github.com/.wallpapers
 ```
 
-[桌面等常用软件](https://github.com/threearapig/dotfiles)
+[后续环境安装](https://github.com/threearapig/dotfiles)
 
 
 ## 常见问题
