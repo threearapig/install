@@ -426,7 +426,7 @@ paru -S chezmoi
 chezmoi init --apply https://github.com/threearapig/dotfiles
 
 # 壁纸
-git clone https://github.com/.wallpapers
+git clone https://github.com/threearapig/.wallpapers
 ```
 
 [后续环境安装](https://github.com/threearapig/dotfiles)
